@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8E9C3CE817DE9DE000427E62"
-               BuildableName = "libBolts.a"
+               BlueprintIdentifier = "FB40FC2D1B0DDD61009E148B"
+               BuildableName = "Bolts.framework"
                BlueprintName = "Bolts"
                ReferencedContainer = "container:Bolts.xcodeproj">
             </BuildableReference>
@@ -42,8 +42,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8E9C3CE817DE9DE000427E62"
-            BuildableName = "libBolts.a"
+            BlueprintIdentifier = "FB40FC2D1B0DDD61009E148B"
+            BuildableName = "Bolts.framework"
             BlueprintName = "Bolts"
             ReferencedContainer = "container:Bolts.xcodeproj">
          </BuildableReference>
@@ -61,8 +61,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8E9C3CE817DE9DE000427E62"
-            BuildableName = "libBolts.a"
+            BlueprintIdentifier = "FB40FC2D1B0DDD61009E148B"
+            BuildableName = "Bolts.framework"
             BlueprintName = "Bolts"
             ReferencedContainer = "container:Bolts.xcodeproj">
          </BuildableReference>
@@ -79,8 +79,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8E9C3CE817DE9DE000427E62"
-            BuildableName = "libBolts.a"
+            BlueprintIdentifier = "FB40FC2D1B0DDD61009E148B"
+            BuildableName = "Bolts.framework"
             BlueprintName = "Bolts"
             ReferencedContainer = "container:Bolts.xcodeproj">
          </BuildableReference>
