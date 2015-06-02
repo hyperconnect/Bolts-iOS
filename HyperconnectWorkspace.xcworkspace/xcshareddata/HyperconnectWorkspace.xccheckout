@@ -5,9 +5,9 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>33AFD6E3-D171-4482-B16B-FCADBB7D8BBA</string>
+	<string>0BFFC245-7BB3-46A8-8541-A86D00E25278</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Bolts</string>
+	<string>HyperconnectWorkspace</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>497FFDFDB4AEB909526F7F78BF8A443B04B42706</key>
@@ -16,13 +16,13 @@
 		<string>https://github.com/hyperconnect/Bolts-iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Bolts.xcodeproj</string>
+	<string>HyperconnectWorkspace.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>497FFDFDB4AEB909526F7F78BF8A443B04B42706</key>
-		<string>../../..</string>
-		<key>61C4B9E3B61282127C102C87B46B8CDE985974AE</key>
 		<string>../..</string>
+		<key>61C4B9E3B61282127C102C87B46B8CDE985974AE</key>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/hyperconnect/Bolts-iOS.git</string>

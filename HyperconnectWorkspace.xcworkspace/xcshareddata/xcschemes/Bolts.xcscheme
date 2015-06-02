@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0600"
+   LastUpgradeVersion = "0630"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8EDDA62817E17DDC00655F8A"
+               BlueprintIdentifier = "FB40FC2D1B0DDD61009E148B"
                BuildableName = "Bolts.framework"
-               BlueprintName = "MacBolts"
+               BlueprintName = "Bolts"
                ReferencedContainer = "container:Bolts.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,13 +32,22 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8E8C8F1817F241DA00E3F1C7"
-               BuildableName = "MacBoltsTests.xctest"
-               BlueprintName = "MacBoltsTests"
+               BlueprintIdentifier = "8E8C8EE817F23D1D00E3F1C7"
+               BuildableName = "BoltsTests.xctest"
+               BlueprintName = "BoltsTests"
                ReferencedContainer = "container:Bolts.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "FB40FC2D1B0DDD61009E148B"
+            BuildableName = "Bolts.framework"
+            BlueprintName = "Bolts"
+            ReferencedContainer = "container:Bolts.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -52,9 +61,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8EDDA62817E17DDC00655F8A"
+            BlueprintIdentifier = "FB40FC2D1B0DDD61009E148B"
             BuildableName = "Bolts.framework"
-            BlueprintName = "MacBolts"
+            BlueprintName = "Bolts"
             ReferencedContainer = "container:Bolts.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -67,6 +76,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "FB40FC2D1B0DDD61009E148B"
+            BuildableName = "Bolts.framework"
+            BlueprintName = "Bolts"
+            ReferencedContainer = "container:Bolts.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

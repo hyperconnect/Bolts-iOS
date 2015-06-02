@@ -16,7 +16,7 @@
 		FB40FC541B0DDD6D009E148B /* BFTaskCompletionSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8103FA5319900A84000BAE3F /* BFTaskCompletionSource.m */; };
 		FB40FC551B0DDD6D009E148B /* BFExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8103FA4E19900A84000BAE3F /* BFExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB40FC561B0DDD6D009E148B /* BFExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8103FA4F19900A84000BAE3F /* BFExecutor.m */; };
-		FB40FC571B0DDD6D009E148B /* BFAppLink_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B242FAB719A567660097ECAE /* BFAppLink_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB40FC571B0DDD6D009E148B /* BFAppLink_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B242FAB719A567660097ECAE /* BFAppLink_Internal.h */; };
 		FB40FC581B0DDD6D009E148B /* BFAppLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 8103FA5819900A84000BAE3F /* BFAppLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB40FC591B0DDD6D009E148B /* BFAppLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 8103FA5919900A84000BAE3F /* BFAppLink.m */; };
 		FB40FC5A1B0DDD6D009E148B /* BFAppLinkNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8103FA5A19900A84000BAE3F /* BFAppLinkNavigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,13 +28,13 @@
 		FB40FC601B0DDD6D009E148B /* BFAppLinkReturnToRefererController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8103FA5E19900A84000BAE3F /* BFAppLinkReturnToRefererController.m */; };
 		FB40FC611B0DDD6D009E148B /* BFAppLinkReturnToRefererView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8103FA5F19900A84000BAE3F /* BFAppLinkReturnToRefererView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB40FC621B0DDD6D009E148B /* BFAppLinkReturnToRefererView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8103FA6019900A84000BAE3F /* BFAppLinkReturnToRefererView.m */; };
-		FB40FC631B0DDD6D009E148B /* BFAppLinkReturnToRefererView_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 8103FA6119900A84000BAE3F /* BFAppLinkReturnToRefererView_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB40FC631B0DDD6D009E148B /* BFAppLinkReturnToRefererView_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 8103FA6119900A84000BAE3F /* BFAppLinkReturnToRefererView_Internal.h */; };
 		FB40FC641B0DDD6D009E148B /* BFAppLinkTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 8103FA6219900A84000BAE3F /* BFAppLinkTarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB40FC651B0DDD6D009E148B /* BFAppLinkTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 8103FA6319900A84000BAE3F /* BFAppLinkTarget.m */; };
-		FB40FC661B0DDD6D009E148B /* BFMeasurementEvent_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B242FAC019A599CD0097ECAE /* BFMeasurementEvent_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB40FC661B0DDD6D009E148B /* BFMeasurementEvent_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B242FAC019A599CD0097ECAE /* BFMeasurementEvent_Internal.h */; };
 		FB40FC671B0DDD6D009E148B /* BFMeasurementEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = B242FAB819A567660097ECAE /* BFMeasurementEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB40FC681B0DDD6D009E148B /* BFMeasurementEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B242FAB919A567660097ECAE /* BFMeasurementEvent.m */; };
-		FB40FC691B0DDD6D009E148B /* BFURL_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B242FABA19A567660097ECAE /* BFURL_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB40FC691B0DDD6D009E148B /* BFURL_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B242FABA19A567660097ECAE /* BFURL_Internal.h */; };
 		FB40FC6A1B0DDD6D009E148B /* BFURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 8103FA6419900A84000BAE3F /* BFURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB40FC6B1B0DDD6D009E148B /* BFURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8103FA6519900A84000BAE3F /* BFURL.m */; };
 		FB5933A31B0E280700482F3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5933A21B0E280700482F3C /* UIKit.framework */; };
@@ -212,13 +212,13 @@
 				FB40FC611B0DDD6D009E148B /* BFAppLinkReturnToRefererView.h in Headers */,
 				FB40FC511B0DDD6D009E148B /* BFTask.h in Headers */,
 				FB40FC5C1B0DDD6D009E148B /* BFAppLinkResolving.h in Headers */,
-				FB40FC5D1B0DDD6D009E148B /* BFWebViewAppLinkResolver.h in Headers */,
 				FB40FC641B0DDD6D009E148B /* BFAppLinkTarget.h in Headers */,
 				FB40FC671B0DDD6D009E148B /* BFMeasurementEvent.h in Headers */,
 				FB40FC531B0DDD6D009E148B /* BFTaskCompletionSource.h in Headers */,
 				FB40FC5A1B0DDD6D009E148B /* BFAppLinkNavigation.h in Headers */,
 				FB40FC631B0DDD6D009E148B /* BFAppLinkReturnToRefererView_Internal.h in Headers */,
 				FB40FC551B0DDD6D009E148B /* BFExecutor.h in Headers */,
+				FB40FC5D1B0DDD6D009E148B /* BFWebViewAppLinkResolver.h in Headers */,
 				FB40FC6A1B0DDD6D009E148B /* BFURL.h in Headers */,
 				FB40FC4E1B0DDD6D009E148B /* BoltsVersion.h in Headers */,
 				FB40FC691B0DDD6D009E148B /* BFURL_Internal.h in Headers */,

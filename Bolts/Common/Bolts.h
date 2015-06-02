@@ -35,3 +35,8 @@ extern NSInteger const kBFMultipleErrorsError;
 + (NSString *)version;
 
 @end
+
+
+/// HOTFIX: 이게 빠지면 FBSDK3 빌드가 안되서 집어넣음.
+#import <Bolts/BFAppLinkResolving.h>
+#import <Bolts/BFWebViewAppLinkResolver.h>
