@@ -1,6 +1,46 @@
+branches:
+  only:
+    - master
 language: objective-c
+os: osx
+cache: 
+  - cocoapods
+matrix:
+  include:
+    - osx_image: xcode6.4
+      env: TEST_TYPE=ios
+    - osx_image: xcode6.4
+      env: TEST_TYPE=osx
+    - osx_image: xcode6.4
+      env: TEST_TYPE=cocoapods
+    - osx_image: xcode7
+      env: TEST_TYPE=ios
+    - osx_image: xcode7
+      env: TEST_TYPE=osx
 before_install:
-  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+- |
+  if [ "$TEST_TYPE" = ios ] || [ "$TEST_TYPE" = osx ]; then
+    gem install xcpretty -N --no-ri --no-rdoc
+    gem install slather --no-ri --no-rdoc    
+  elif [ "$TEST_TYPE" = cocoapods ]; then
+    gem install cocoapods --pre --quiet --no-ri --no-rdoc
+    pod setup --silent
+    pod repo update --silent
+  fi
 script:
-  - set -o pipefail && xcodebuild -project Bolts.xcodeproj -sdk iphonesimulator -scheme Bolts -configuration Debug test | xcpretty -c
-  - set -o pipefail && xcodebuild -project Bolts.xcodeproj -sdk macosx -scheme MacBolts test | xcpretty -c ; exit
+- |
+    if [ "$TEST_TYPE" = ios ]; then
+      set -o pipefail
+      xcodebuild test -project Bolts.xcodeproj -sdk iphonesimulator -scheme Bolts -configuration Debug OBJROOT="$PWD/build" SYMROOT="$PWD/build" -destination "platform=iOS Simulator,name=iPhone 4s" -destination "platform=iOS Simulator,name=iPhone 6 Plus" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -c
+    elif [ "$TEST_TYPE" = osx ]; then
+      set -o pipefail    
+      xcodebuild test -project Bolts.xcodeproj -sdk macosx -scheme MacBolts -configuration Debug OBJROOT="$PWD/build" SYMROOT="$PWD/build" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -c
+    elif [ "$TEST_TYPE" = cocoapods ]; then
+      pod lib lint Bolts.podspec
+      pod lib lint --use-libraries Bolts.podspec    
+    fi
+after_success:
+- |
+    if [ "$TEST_TYPE" = ios ] || [ "$TEST_TYPE" = osx ]; then
+      slather
+    fi

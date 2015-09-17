@@ -1,5 +1,35 @@
 # Bolts CHANGELOG
 
+## 1.2.2
+- New: Added bitcode support when built from source for iOS 9.
+- New: `BFTask` and `BFTaskCompletionSource` now supports Obj-C Generics for types of the result.
+- Fixed: Resolved a crash when creating a BFURL when `target_url` is not a string (null or a number).
+- Fixed: `BFIncludeStatusBarInSizeAlways` is properly handled now.
+
+## 1.2.1
+- Improved: Removed the need to check canOpenURL: and just use openURL: directly which improves App Links behavior on iOS 9.
+- Fixed: Potentially never completed task if continuation returns a task and cancellation was requested.
+- Fixed: iOS 9 deprecations that cause warnings when building from source and targeting iOS 9+.
+
+## 1.2.0
+- Added: `BFCancellationToken`, `BFCancellationTokenSource`, `BFCancellationTokenRegistration`
+- Updated: `BFTask` APIs to have methods that accept `BFCancellationToken` as an argument.
+- Documentation updates and small bug fixes.
+
+## 1.1.5
+- Better subclassing support for `BFTask`, `BFTaskCompletionSource`, `BFExecutor`.
+- Improved `taskForCompletionOfAllTasks:` to check for `error`/`exception` before cancelling a task.
+- Fixed and improved layout of `BFAppLinkReturnToRefererController`.
+- Improve optional importing for AppLinks code in umbrella header.
+- Split Tasks and AppLinks in subspecs.
+
+## 1.1.4
+- New: Bolts for iOS is easily importable from Swift code (via `import Bolts`).
+- New: Added `BFTask +taskForCompletionOfAllTaskResults`.
+- New: Added `faulted` property on `BFTask`.
+- New: Made `BFTaskErrorDomain` and `BFTaskMultipleExceptionsException` constants publicly available.
+- New: `BFTask -description` now shows completed/cancelled/faulted status of a task.
+
 ## 1.1.3
 - Made Bolts work if added as a subproject
 - Support for iOS 8
