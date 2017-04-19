@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/BoltsFramework'
   s.license      = 'BSD'
   s.authors      = 'Parse'
-  s.source       = { :git => 'https://github.com/BoltsFramework/Bolts-ObjC.git', :tag => s.version.to_s }
+  s.source       = { :git => 'https://github.com/hyperconnect/Bolts-iOS.git', :branch => 'cocoapods' }
   s.social_media_url = 'https://twitter.com/ParseIt'
   s.requires_arc = true
 
